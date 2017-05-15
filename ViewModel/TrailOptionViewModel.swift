@@ -8,12 +8,19 @@ public class TrailOptionViewModel {
     var climb = Observable<String>("")
     var image = Observable<UIImage?>(nil)
     
-    var trailOption = TrailOption() {
+    var trailOption: TrailOption? {
         didSet {
-            title.value = trailOption.title
-            length.value = "Distance " + trailOption.lengthInKm.description + " km"
-            climb.value = "Climbing " + trailOption.climb.description + " m"
-            RemoteImage(imageUrl: trailOption.imageUrl).download().bind(to: image)
+            if let trailOption = trailOption {
+                title.value = trailOption.title
+                length.value = "Distance " + trailOption.lengthInKm.description + " km"
+                climb.value = "Climbing " + trailOption.climb.description + " m"
+                RemoteImage(imageUrl: trailOption.imageUrl).download().bind(to: image)
+            } else {
+                title.value = ""
+                length.value = ""
+                climb.value = ""
+                image.value = nil
+            }
         }
     }
 }
