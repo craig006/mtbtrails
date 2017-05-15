@@ -2,5 +2,5 @@ import Foundation
 import ReactiveKit
 
 protocol TrailFetchAction: Action {
-    func begin() -> Signal<Trail, AppError>
+    func begin(id: String) -> Signal<Trail, AppError>
 }
