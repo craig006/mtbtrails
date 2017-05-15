@@ -1,0 +1,46 @@
+PODS:
+  - Bond (6.2.4):
+    - Diff (~> 0.4)
+    - ReactiveKit (~> 3.5.1)
+  - Diff (0.5.3)
+  - FirebaseAnalytics (3.7.0):
+    - FirebaseCore (~> 3.5)
+    - FirebaseInstanceID (~> 1.0)
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseCore (3.5.2):
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseDatabase (3.1.2):
+    - FirebaseAnalytics (~> 3.7)
+  - FirebaseInstanceID (1.0.9)
+  - GoogleToolboxForMac/Defines (2.1.1)
+  - GoogleToolboxForMac/NSData+zlib (2.1.1):
+    - GoogleToolboxForMac/Defines (= 2.1.1)
+  - ReactiveKit (3.5.1)
+  - SnapKit (3.2.0)
+  - SwiftyJSON (3.1.4)
+  - Swinject (2.0.0)
+
+DEPENDENCIES:
+  - Bond
+  - FirebaseCore
+  - FirebaseDatabase
+  - SnapKit (~> 3.0)
+  - SwiftyJSON
+  - Swinject
+
+SPEC CHECKSUMS:
+  Bond: c54dc8e6ad4f2d4e3d60c680c25637a7824161df
+  Diff: befa1d19c32726b2b36ce915d98793e2fbde8dcc
+  FirebaseAnalytics: 0d1b7d81d5021155be37702a94ba1ec16d45365d
+  FirebaseCore: a024587e43778508700af8c6b1209f7c4516ba02
+  FirebaseDatabase: 05c96d7b43a7368dc91c07791adb49683e1738d1
+  FirebaseInstanceID: 2d0518b1378fe9d685ef40cbdd63d2fdc1125339
+  GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
+  ReactiveKit: aa0faf668053e7fddd6a07829ba3696741cbff37
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  Swinject: 2e964a80d70ab09b3949c99032711f89147bfd60
+
+PODFILE CHECKSUM: ca4b465149855dbaa3a13b0f2789a2a0a0546a66
+
+COCOAPODS: 1.2.1

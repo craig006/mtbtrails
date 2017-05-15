@@ -1,0 +1,4 @@
+Logging
+Handle errors on rx calls
+Fetch a trail from Firebase
+Clean createTableSections in TrailDetailController
