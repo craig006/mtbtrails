@@ -19,6 +19,7 @@ class TrailService {
             self.dataBase.child(id).observeSingleEvent(of: .value, with: { snapshot in
                 let json = JSON(snapshot.value)
                 let trail: Trail = json.singleObject()
+                trail.id = id
                 observer.completed(with: trail)
             })
 
