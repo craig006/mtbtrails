@@ -20,7 +20,7 @@ public class TrailDetailViewModel: NSObject {
         self.trailFetchAction = trailFetchAction
         self.trailLikeAction = trailLikeAction
         super.init()
-        self.trailFetchAction.begin()
+        self.trailFetchAction.begin(id: "contermanskloof")
                 .observeNext { trail in self.trail = trail }
                 .dispose(in: bag)
     }
