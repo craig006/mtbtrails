@@ -21,8 +21,13 @@ public class TrailDetailViewModel: NSObject {
         self.trailLikeAction = trailLikeAction
         super.init()
         self.trailFetchAction.begin(id: "contermanskloof")
-                .observeNext { trail in self.trail = trail }
-                .dispose(in: bag)
+                .observe { event in
+//                    if event.success
+//                    if let trail = event.result {
+
+                    //} //else if let error =
+
+                }.dispose(in: bag)
     }
 
     func likeAction() {

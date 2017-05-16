@@ -1,6 +1,7 @@
 import Foundation
 import UIKit
 import MapKit
+import ReactiveKit
 
 extension String {
     func height(withConstrainedWidth width: CGFloat, font: UIFont) -> CGFloat {
@@ -38,5 +39,29 @@ extension UIColor {
                 green: (rgb >> 8) & 0xFF,
                 blue: rgb & 0xFF
         )
+    }
+}
+
+extension Event {
+
+    var result: Element? {
+        if case .next(let element) = self {
+            return element
+        }
+        return nil
+    }
+
+    var error: Error? {
+        if case .failed(let error) = self {
+            return error
+        }
+        return nil
+    }
+
+    var success: Bool {
+        if case .failed(_) = self {
+            return false
+        }
+        return true
     }
 }
